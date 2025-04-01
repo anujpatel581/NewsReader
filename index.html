@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Reader Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>News Reader</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><button class="tab" onclick="showTab('breaking')">Breaking News</button></li>
+                <li><button class="tab" onclick="showTab('latest')">Latest News</button></li>
+                <li><button class="tab" onclick="showTab('sports')">Sports</button></li>
+                <li><button class="tab" onclick="showTab('technology')">Technology</button></li>
+            </ul>
+        </nav>
+        <section id="news-container">
+            <div class="tab-content" id="breaking">
+                <h2>Breaking News</h2>
+                <div class="news-articles" id="breaking-news"></div>
+            </div>
+            <div class="tab-content" id="latest">
+                <h2>Latest News</h2>
+                <div class="news-articles" id="latest-news"></div>
+            </div>
+            <div class="tab-content" id="sports">
+                <h2>Sports News</h2>
+                <div class="news-articles" id="sports-news"></div>
+            </div>
+            <div class="tab-content" id="technology">
+                <h2>Technology News</h2>
+                <div class="news-articles" id="technology-news"></div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
